@@ -31,8 +31,8 @@ public class SpriteShowDrawer : PropertyDrawer
 
         Rect myRect = position;
         myRect.height = myRect.height / 5;
-        //Texture2D atext = SpriteUtility.GetSpriteTexture(mySprite, false);
-        //GUILayout.Label(atext);
+        Texture2D atext = SpriteUtility.GetSpriteTexture(mySprite, false);
+        GUI.Label(myRect,atext);
 
         myRect.y += myRect.height * 4;
         EditorGUI.PropertyField(myRect, property, label, true);

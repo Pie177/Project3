@@ -7,11 +7,14 @@ public class Example : MonoBehaviour {
 
     public int bump;
 
-    [ColorLine(0f, 0f, 1f)]
+    [ColorLine(1f, 0f, 0f)]
     public string baba;
 
-    //[SpriteShow]
+    [SpriteShow]
     public Sprite thing;
+
+    [VectorScale]
+    public Vector3 blah;
 
     // Use this for initialization
     void Start ()
